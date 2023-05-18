@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | zio_games_demo</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=600 height=600 style="width: 600px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/bricks_small.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/bricks_small.data.gz",
+        frameworkUrl: "Build/bricks_small.framework.js.gz",
+        codeUrl: "Build/bricks_small.wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "zio_games_demo",
+        productVersion: "0.1",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
