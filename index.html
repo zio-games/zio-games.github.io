@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <h1>We pepega your games</h1>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ZIO Games</title>
-    <style>
-      body {
-        background-color: #838380;
-      }
-    </style>
-
+    <title>Unity WebGL Player | zio_games_demo</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" width=600 height=600 style="width: 600px; height: 600px; background: #231F20"></canvas>
-    <script src="Build/bricks_small.loader.js"></script>
+    <script src="Build/bricks_flood.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/bricks_small.data",
-        frameworkUrl: "Build/bricks_small.framework.js",
-        codeUrl: "Build/bricks_small.wasm",
+        dataUrl: "Build/bricks_flood.data",
+        frameworkUrl: "Build/bricks_flood.framework.js",
+        codeUrl: "Build/bricks_flood.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "zio_games_demo",
